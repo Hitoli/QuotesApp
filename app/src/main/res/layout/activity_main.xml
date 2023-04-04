@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradients"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monda"
+        android:text="Marcusand"
+        android:textSize="25dp"
+        android:textColor="#f8f9f5"
+       android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Quotescard"/>
+
+    <LinearLayout
+        android:id="@+id/Quotescard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/qoutescard"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/QuotesImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:src="@drawable/quotescolon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Quotesitis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="You have power over your mind - not outside events.
+        Realize this, and you will find strength."
+            android:textColor="#282C35"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/QuotesAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/monda"
+            android:text="Marcus Aurelius"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#282C35"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/QuotesShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        app:backgroundTint="@color/white"
+        android:background="@drawable/shape_back"
+        android:clickable="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_share_24"
+        app:layout_constraintBottom_toBottomOf="@id/Quotescard"
+        app:layout_constraintEnd_toEndOf="@id/Quotescard"
+        app:layout_constraintTop_toBottomOf="@+id/Quotescard">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <LinearLayout
+        android:id="@+id/NextQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Previous"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#f8f9f5"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:layout_weight="2"
+            android:text="Next"
+            android:gravity="center"
+            android:textColor="#f8f9f5"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
