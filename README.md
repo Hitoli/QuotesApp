@@ -1,10 +1,12 @@
 # QuotesApp
 
-QuotesApp
-- Simple App that displays random quoutes
+QuotesApp:
 
-Build With
--Mvvm Architecture
+- Simple App that displays random quotes
+
+Build With:
+
+-MVVM Architecture
 -XML
 -Kotlin
--Json
+-JSON
