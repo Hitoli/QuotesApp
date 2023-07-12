@@ -6,7 +6,7 @@ QuotesApp:
 
 Build With:
 
--MVVM Architecture
--XML
--Kotlin
--JSON
+- MVVM Architecture
+- XML
+- Kotlin
+- JSON
